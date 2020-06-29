@@ -8,7 +8,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 class Relationships implements RelationshipBrowser {
-    //This is where the logic should be included and should not depend lower classes.
+    //This is where the logic should be included and should not depend higher classes.
     @Override
     public List<Person> findAllChildrenOf(String name) {
 
