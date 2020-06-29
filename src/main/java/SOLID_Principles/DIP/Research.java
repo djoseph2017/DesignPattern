@@ -15,6 +15,8 @@ class Research {
                 .forEach(ch -> System.out.println("John has a child called " + ch.getValue2().name));
     }*/
 
+    //See this is depending on Abstraction and not like before where the logic is in constructor and also
+    //depending on class.
     public Research(RelationshipBrowser browser) {
         List<Person> children = browser.findAllChildrenOf("John");
         for (Person child : children)
